@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> F.5 - Exercício 3 </title>
+</head>
+
+<body>
+	<h3> F.5 - Exercício 3 </h3>
+	<script>
+		var i,numero;
+		var soma=0;
+		var total=0;
+		var lista=new Array();
+		for(i=0; i<5; i++)							//ciclo que repete 5 vezes as linhas 16 a 19
+			{
+				valor=prompt("insere o número:","");
+				numero=parseFloat(valor);			//<--converte o texto inserido para um valor numérico
+				lista[i]=numero;					//<--Atribui os numeros às diversas posições no array
+				total=total+numero;					//<--efetua a soma sucessiva dos valores inseridos 
+			}
+		/* apresentação dos valores do array e da soma */
+		document.write("Valores inseridos: ");
+		for(i=0; i<5; i++)
+			document.write(lista[i] + " / ");
+		
+		document.write("</br>  </br>" );
+		document.write("A soma é : " + total + "</br>");
+	</script>
+</body>
+</html>

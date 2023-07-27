@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> F.5 - Exercício 2 </title>
+</head>
+
+<body>
+	<h3>F.5 - Exercício 2 </h3>
+	<script>
+		var x;
+		var total;
+		var nomes=new Array();
+		total=prompt("Quantos nomes?","");
+		
+		/* inserção de valores no array */
+		for(x=1; x<=total; x++)
+			nomes[x-1]= prompt( x + "º nome ?","")
+		
+		document.write("<h3> Os nomes inseridos foram: </h3>");
+		/* apresentação dos valores do array no ecrã */
+		for (x=1; x<=total; x++)
+			document.write( x + "º nome: " + nomes[x-1] + "</br>");
+	</script>
+</body>
+</html>
